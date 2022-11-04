@@ -1,4 +1,4 @@
-resource "ec2_instance" "web" {
+resource "aws_instance" "web" {
   ami           = var.AMI_ID
   instance_type = var.INSTANCE_TYPE
   monitoring = true
